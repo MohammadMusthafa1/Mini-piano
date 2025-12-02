@@ -6,7 +6,7 @@ let allKeys = [];
 let audio = new Audio(); // Create audio object once
 
 const playTune = (key) => {
-    audio.src = `${key}.mp3.mp3`; // Use .mp3 extension
+    audio.src = `tunes/${key}.mp3.mp3`; // Use .mp3 extension
     audio.volume = volumeSlider.value;
     audio.play();
 
